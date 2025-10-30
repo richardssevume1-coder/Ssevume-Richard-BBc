@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background-color: grey;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #0d1b2a;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+p {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+
+a {
+  color: #004aad;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+a:hover {
+  color: #d4a017;
+}
+
+
+header {
+  background: linear-gradient(90deg, #0e345e, #1b263b);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+header .logo {
+  width: 70px;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  color: yellow;
+  border-bottom: 3px solid #d4a017;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-radius: 50%;
+  border: 2px solid #d4a017;
+}
+
+nav a {
+  margin-left: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+
+nav a.active {
+  border-bottom: 3px solid #d4a017;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  color: #d4a017;
+}
+
+.iphone {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.iphone video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.iphone-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(13, 27, 42, 0.65);
+  color: green;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.iphone-text h1 {
+  font-size: xx-large;
+  color: green;
+}
+.iphone-text p{
+  color: greenyellow;
+  font-size:x-large larger;
+}
+.about {
+  padding: 60px 10%;
+  background-color:grey; 
+  text-align: center;
+}
+
+.about h2 {
+  color: yellow;
+  margin-bottom: 20px;
+  font-size: xx-large;
+  border-bottom: 3px solid ;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color:purple;
+  font-size: x-large;
+}
+
+.about .images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.about .images img {
+  width: 40%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.focus {
+  background-color:grey ;
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.focus h2 {
+  color: yellow;
+  font-size: xx-large;
+  border-bottom: 3px solid #d4a017;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 40px;
+}
+
+.focus {
+  margin-bottom: 50px;
+}
+
+.focus-item{
+  display: flex;
+  margin-bottom: 70px;
+}
+.focus-item div{
+  margin-top: 60px;
+  margin-right: 10px;
+  container: initial;
+}
+.focus-item h3 {
+  color: yellowgreen;
+  margin-bottom: 10px;
+  font-size: x-large;
+}
+
+.focus-item img {
+  width:600px;
+  height: 300px;
+  object-fit: cover;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.focus-item p {
+  max-width: 600px;
+  margin: 0 auto;
+  color:whit;
+  font-size: x-large;
+}
+
+ 
+
+   /*CONTACT PAGE*/
+.contact {
+  padding: 70px 10%;
+  text-align: center;
+  background: linear-gradient(to bottom right, #ffffff, #f4f6fb);
+}
+
+.contact h2 {
+  color: hsl(214, 100%, 34%);
+  margin-bottom: 10px;
+}
+.h h3{
+color: rgb(30, 255, 0);
+text-align: center;
+font-size: x-large;
+}
+
+.contact-section{
+  margin: 30px 0 10px;
+  margin-left: 50px;
+}
+.contact-section h2{
+  color: yellow;
+  font-size: xx-large;
+}
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 1.05em;
+  color:blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  gap: 15px;
+}
+
+form input, form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #d4a017;
+  box-shadow: 0 0 5px #d4a017;
+}
+
+form button {
+  background-color: lch(61.57% 88.56 136.47);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  color: white;
+}
+
+.socials {
+   display:block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.socials a {
+  color: blue;
+  padding: 8px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: 0.3s;
+  margin-top: 5px;
+  
+}
+
+.set h3{
+  text-align: center;
+  color:yellow;
+  margin: 40px 10px ;
+  font-size: xx-large;
+  padding-bottom: 10px
+}
+.socials a:hover {
+  color: #d4a017;
+  display: flex;
+  text-align: center;
+}
+
+
+
+footer{ 
+    background: linear-gradient(90deg, #0e345e, #1b263b);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #008000;
+    font-weight: bold;
+}
+
+footer p {
+    color:  #008000;
+}
+
+/*responsiveness*/
+  @media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .iphone-text h1 {
+    font-size: 1.8em;
+  }
+
+  .columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .image-gallery {
+    flex-direction: column;
+  }
+
+
+  .focus-item img {
+    width: 90%;
+  }
+}
+
+
